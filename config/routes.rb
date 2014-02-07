@@ -4,6 +4,7 @@ Blog::Application.routes.draw do
   
   get "welcome/index"
   get "welcome" => "welcome#index"
+  get "welcome/visitor" => "welcome#visitor"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
