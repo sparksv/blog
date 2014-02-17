@@ -2,16 +2,31 @@
 <html>
 
 <head>
-  <title>Sparks New Blog</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+
+	<style>
+		body
+		{background: #00FF00;}
+		td
+		{border-width:1px; border-style: solid; color: #000000}
+		td
+	    {font:15px; arial,sans-serif; color: #000000}
+	</style>
+
+
+  <title>Val Sparks Blog</title>
+
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 
-<h1> Valerie Sparks Blog</h1>
 
 <body>
 
+<h1> Valerie Sparks Blog</h1>
+
+<tr>
+	<td align="center" valign="middle" width="65"><a href= "http://0.0.0.0:3000/welcome">Home</a></td>
 
 
 <%= yield %>
