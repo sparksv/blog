@@ -10,7 +10,7 @@ class WelcomeController < ApplicationController
   def visitor
   end
 
-  
+  def handshake
 
   puts "params: #{params}"
 

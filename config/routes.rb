@@ -1,5 +1,7 @@
 Blog::Application.routes.draw do
 
+  resources :users
+
   root "welcome#index"
   
   get "welcome/index"
@@ -8,7 +10,7 @@ Blog::Application.routes.draw do
   get "welcome/bio" => "welcome#bio"
 
   post "welcome/index" => "welcome#handshake"
-  post welcome" +> "welcomeindex"
+  post "welcome" => "welcome#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
