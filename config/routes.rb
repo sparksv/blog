@@ -7,7 +7,7 @@ Blog::Application.routes.draw do
   get "welcome/index"
   get "welcome" => "welcome#index"
   get "welcome/visitor" => "welcome#visitor"
-  get "welcome/bio" => "welcome#bio"
+  get "welcome/Bio" => "welcome#bio"
 
   post "welcome/index" => "welcome#handshake"
   post "welcome" => "welcome#index"
